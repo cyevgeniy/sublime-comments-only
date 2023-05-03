@@ -1,23 +1,50 @@
 {
-	"name": "Comments only",
-	"author": "Evgeny Chaban",
-	"variables":
-	{
-		"blue2": "hsl(180, 36%, 54%)",
-		"grey": "hsl(0, 0%, 73%)",
-		"grey2": "hsl(0, 0%, 60%)",
-		"grey3": "hsl(0, 0%, 20%)",
-		"orange": "hsl(32, 93%, 66%)",
-		"orange3": "hsl(40, 94%, 68%)",
-		"pink": "hsl(300, 30%, 68%)",
-		"red": "hsl(357, 79%, 65%)",
-		"white2": "hsl(210, 11%, 85%)",
-		"white3": "hsl(204, 10%, 90%)",
-		"white4": "hsl(195, 11%, 93%)",
-		"white5": "hsl(180, 9%, 98%)"
-	},
-	"globals":
-	{
-		"foreground": "var(grey3)",
-	}
+    "name": "Comments only",
+    "author": "Evgeny Chaban",
+    "variables":
+    {
+        "blue2": "hsl(180, 36%, 54%)",
+        "grey": "hsl(0, 0%, 73%)",
+        "grey2": "hsl(0, 0%, 60%)",
+        "grey3": "hsl(0, 0%, 20%)",
+        "orange": "hsl(32, 93%, 66%)",
+        "orange3": "hsl(40, 94%, 68%)",
+        "pink": "hsl(300, 30%, 68%)",
+        "red": "hsl(357, 79%, 65%)",
+        "white2": "hsl(210, 11%, 85%)",
+        "white3": "hsl(204, 10%, 90%)",
+        "white4": "hsl(195, 11%, 93%)",
+        "white5": "hsl(180, 9%, 98%)"
+    },
+    "globals":
+    {
+        "foreground": "var(grey3)",
+        "background": "var(white5)",
+        "caret": "var(blue2)",
+        "line_highlight": "var(white3)",
+        "selection": "var(white3)",
+        "selection_border": "var(white2)",
+        "inactive_selection": "var(white4)",
+        "misspelling": "var(red)",
+        "shadow": "var(grey)",
+        "active_guide": "var(blue2)",
+        "stack_guide": "color(var(blue2) alpha(0.5))",
+        "highlight": "var(blue2)",
+        "find_highlight_foreground": "var(grey3)",
+        "find_highlight": "var(orange3)",
+        "brackets_options": "underline",
+        "brackets_foreground": "var(orange)",
+        "bracket_contents_options": "underline",
+        "bracket_contents_foreground": "var(blue2)",
+        "tags_options": "stippled_underline",
+        "tags_foreground": "var(pink)"
+    },
+    "rules":
+    [
+        {
+            "name": "Comment",
+            "scope": "comment, punctuation.definition.comment",
+            "foreground": "var(grey2)"
+        }
+    ]
 }
