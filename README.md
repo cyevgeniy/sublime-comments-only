@@ -1,5 +1,3 @@
-# Comments-only colorscheme for Sublime Text
-
 ![](logo.png)
 
 Comments-only is a simple colorscheme without syntax highlighting.
