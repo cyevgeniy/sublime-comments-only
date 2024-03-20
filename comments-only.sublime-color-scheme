@@ -49,7 +49,7 @@
         },
         {
             "scope": "message.error",
-            "foreground": "var(orange)"
+            "foreground": "var(red)"
         }
     ]
 }
